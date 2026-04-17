@@ -81,21 +81,21 @@ class AnujWankhede:
 <div align="center">
 
 <a href="https://github.com/Anuz-bit/CREDIX">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Anuz-bit&repo=CREDIX&theme=tokyonight" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Anuz-bit&repo=CREDIX&theme=tokyonight&cache_seconds=10" />
 </a>
 
 <a href="https://github.com/Anuz-bit/accident-severity-prediction">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Anuz-bit&repo=accident-severity-prediction&theme=tokyonight" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Anuz-bit&repo=accident-severity-prediction&theme=tokyonight&cache_seconds=10" />
 </a>
 
 <br/><br/>
 
 <a href="https://github.com/Anuz-bit/proctor_exam_platform">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Anuz-bit&repo=proctor_exam_platform&theme=tokyonight" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Anuz-bit&repo=proctor_exam_platform&theme=tokyonight&cache_seconds=10" />
 </a>
 
 <a href="https://github.com/Anuz-bit/Intellectus">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Anuz-bit&repo=Intellectus&theme=tokyonight" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Anuz-bit&repo=Intellectus&theme=tokyonight&cache_seconds=10" />
 </a>
 
 </div>
