@@ -81,34 +81,22 @@ class AnujWankhede:
 <div align="center">
 
 <a href="https://github.com/Anuz-bit/CREDIX">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=Anuz-bit&repo=CREDIX&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=7C3AED&icon_color=7C3AED&text_color=C9D1D9"/>
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Anuz-bit&repo=CREDIX&theme=tokyonight" />
 </a>
-<a href="https://github.com/Anuz-bit/GridSync">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=Anuz-bit&repo=GridSync&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=7C3AED&icon_color=7C3AED&text_color=C9D1D9"/>
+
+<a href="https://github.com/Anuz-bit/accident-severity-prediction">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Anuz-bit&repo=accident-severity-prediction&theme=tokyonight" />
 </a>
 
 <br/><br/>
 
-<a href="https://github.com/Anuz-bit/ResumeTree">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=Anuz-bit&repo=ResumeTree&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=7C3AED&icon_color=7C3AED&text_color=C9D1D9"/>
+<a href="https://github.com/Anuz-bit/proctor_exam_platform">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Anuz-bit&repo=proctor_exam_platform&theme=tokyonight" />
 </a>
+
 <a href="https://github.com/Anuz-bit/Intellectus">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=Anuz-bit&repo=Intellectus&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=7C3AED&icon_color=7C3AED&text_color=C9D1D9"/>
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Anuz-bit&repo=Intellectus&theme=tokyonight" />
 </a>
-
-</div>
-
-<br/>
-
-<div align="center">
-
-| Project | Stack | Key Result |
-|:---|:---|:---|
-| 🏦 **[CREDIX](https://github.com/Anuz-bit/CREDIX)** | XGBoost · LightGBM · SHAP · MLflow · Kafka · Airflow · Plotly Dash | 4-model ensemble · AUC 0.82 · KS 0.45 · 55+ features via Feast |
-| ⚡ **[GridSync](https://github.com/Anuz-bit/GridSync)** | Flutter · Dart · Firebase · FCM · REST APIs | Live deployment with MSEDCL (Maharashtra Govt.) |
-| 📋 **[ResumeTree](https://github.com/Anuz-bit/ResumeTree)** | Python · NLP · Structured Reasoning · Pandas | Vectorless AI resume evaluation system |
-| 🎓 **[Intellectus](https://github.com/Anuz-bit/Intellectus)** | FastAPI · React (Vite) · scikit-learn · REST API | Student dropout risk detection · Hackathon prototype |
-| 🚗 **[Accident-Severity-Prediction](https://github.com/Anuz-bit/accident-severity-prediction)** | Python · scikit-learn · SMOTE · Ensemble Models | 99.20% accuracy (RF) · 5-model benchmark |
 
 </div>
 
