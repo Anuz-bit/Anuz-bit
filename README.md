@@ -24,38 +24,56 @@
 
 ## 🧠 About Me
 
-```python
-class AnujWankhede:
-    def __init__(self):
-        self.name        = "Anuj Wankhede"
-        self.role        = "AI/ML Engineer & Researcher"
-        self.education   = "B.Tech IT  @  VIT Pune  |  9.2 CGPA  |  Graduating 2028"
-        self.location    = "Pune, Maharashtra, India 🇮🇳"
-        self.contact     = "anuj.wankhede1312@gmail.com"
-        self.ip          = ["Patent Filed · IP India · App No. 202521056651 📌",
-                            "Published @ AIDE-2025, Hinweis Research 📝",
-                            "Published @ IJCRT Journal 📝"]
-        self.passion     = ["Explainable AI", "FinTech Systems", "Embedded ML", "DSA"]
+<img align="right" alt="Coding" width="360" src="https://user-images.githubusercontent.com/74038190/229223263-cf2e4b07-2615-4f87-9c38-e37600f8381a.gif"/>
 
-    def work_experience(self):
-        return {
-            "role"    : "Mobile App Developer",
-            "project" : "GridSync",
-            "client"  : "MSEDCL — Maharashtra State Electricity Distribution Co. Ltd.",
-            "impact"  : "Digitized transformer maintenance across Maharashtra for real govt. utility"
-        }
+### Hey, I'm Anuj 👋
 
-    def current_builds(self):
-        return {
-            "CREDIX"     : "4-model ensemble FinTech platform · AUC 0.82, KS 0.45",
-            "ResumeTree" : "AI resume evaluation via structured NLP reasoning",
-            "ExamShield" : "AI-powered proctoring platform · Published @ IJCRT"
-        }
+**AI/ML Engineer** building systems where the *explanation matters as much as the prediction.*
 
-    def fun_fact(self):
-        return "Filed a patent & published 2 research papers before finishing 2nd year 🔥"
+<br/>
+
+🎓 &nbsp;**B.Tech IT** @ VIT Pune &nbsp;|&nbsp; **9.2 CGPA**
+📍 &nbsp;Pune, Maharashtra, India
+🔬 &nbsp;**Patent holder** · **2× Published researcher** · **2nd year**
+⚡ &nbsp;Industry collab with **MSEDCL** (Govt. of Maharashtra)
+
+<br/>
+
+```
+💡 Core belief: A model that isn't trusted, won't be used.
+   That's why I build explainable AI — not just accurate AI.
 ```
 
+<br/>
+
+**🚀 Currently shipping:**
+
+&nbsp;&nbsp;`CREDIX` &nbsp;—&nbsp; FinTech AI · 4-model ensemble · AUC 0.82 &nbsp;🟢 Active  
+&nbsp;&nbsp;`ResumeTree` &nbsp;—&nbsp; LLM-powered resume evaluator · IEEE submission &nbsp;🟡 Building  
+&nbsp;&nbsp;`ExamShield` &nbsp;—&nbsp; AI proctoring platform · IJCRT Published &nbsp;✅ Done  
+
+<br/>
+
+**🧩 Interests:**
+
+![Explainable AI](https://img.shields.io/badge/Explainable_AI-7C3AED?style=flat-square&logoColor=white)
+![FinTech Systems](https://img.shields.io/badge/FinTech_Systems-0077B5?style=flat-square&logoColor=white)
+![Embedded ML](https://img.shields.io/badge/Embedded_ML-00897B?style=flat-square&logoColor=white)
+![Competitive DSA](https://img.shields.io/badge/Competitive_DSA-FF6F00?style=flat-square&logoColor=white)
+
+<br clear="right"/>
+
+---
+
+### 📊 At a glance
+
+<div align="center">
+
+| 🎓 CGPA | 📌 Patent | 📝 Papers | ⚡ Industry Client | 🏅 Club Head |
+|:---:|:---:|:---:|:---:|:---:|
+| **9.2 / 10** | **Filed · IP India** | **2 Published** | **MSEDCL (Govt.)** | **GEDIT · VIT** |
+
+</div>
 ---
 
 ## 🏆 Research, Patents & Achievements
