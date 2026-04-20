@@ -1,10 +1,10 @@
 <div align="center">
 
 <!-- ═══════════════════════════════════════════════════════════════
-     CUSTOM SVG BANNER — stored in assets/banner.svg in this repo
+     CUSTOM SVG BANNER — stored in https://raw.githubusercontent.com/Anuz-bit/Anuz-bit/main/assets/banner.svg in this repo
      Unique: no capsule-render dependency, animated dots + corner brackets
      ═══════════════════════════════════════════════════════════════ -->
-<img src="assets/banner.svg" width="100%" alt="Anuj Wankhede — AI/ML Engineer"/>
+<img src="https://raw.githubusercontent.com/Anuz-bit/Anuz-bit/main/assets/banner.svg" width="100%" alt="Anuj Wankhede — AI/ML Engineer"/>
 
 <br/><br/>
 
@@ -222,6 +222,6 @@ I work at the intersection of **Explainable AI, FinTech, and IoT** — obsessed 
 <br/>
 
 <!-- FOOTER — mirrors the header SVG -->
-<img src="assets/footer.svg" width="100%" alt="footer"/>
+<img src="https://raw.githubusercontent.com/Anuz-bit/Anuz-bit/main/assets/footer.svg" width="100%" alt="footer"/>
 
 </div>
