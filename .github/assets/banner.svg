@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 220" width="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#000000"/>
+      <stop offset="45%" stop-color="#020d1a"/>
+      <stop offset="100%" stop-color="#010409"/>
+    </linearGradient>
+    <linearGradient id="gline" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#00D4FF" stop-opacity="0.9"/>
+      <stop offset="80%" stop-color="#00D4FF" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="40%">
+      <stop offset="0%" stop-color="#00D4FF" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#00D4FF" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      @keyframes pulse { 0%,100%{opacity:0.25} 50%{opacity:0.7} }
+      @keyframes pulse2 { 0%,100%{opacity:0.15} 50%{opacity:0.5} }
+      @keyframes shimmer { 0%,100%{opacity:0.7} 50%{opacity:1} }
+      .p1{animation:pulse 4s ease-in-out infinite}
+      .p2{animation:pulse 4s ease-in-out 1.3s infinite}
+      .p3{animation:pulse 4s ease-in-out 2.6s infinite}
+      .p4{animation:pulse2 5s ease-in-out infinite}
+      .gl{animation:shimmer 2.5s ease-in-out infinite}
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="220" fill="url(#bg)"/>
+
+  <!-- Radial glow behind name -->
+  <ellipse cx="450" cy="100" rx="320" ry="90" fill="url(#glow)"/>
+
+  <!-- Decorative dot field -->
+  <g>
+    <circle cx="48"  cy="38"  r="1.8" fill="#00D4FF" class="p1"/>
+    <circle cx="110" cy="72"  r="1.2" fill="#00D4FF" class="p2"/>
+    <circle cx="75"  cy="155" r="2.0" fill="#00D4FF" class="p3"/>
+    <circle cx="195" cy="28"  r="1.4" fill="#00D4FF" class="p1"/>
+    <circle cx="160" cy="135" r="1.0" fill="#00D4FF" class="p2"/>
+    <circle cx="240" cy="175" r="1.6" fill="#00D4FF" class="p3"/>
+    <circle cx="35"  cy="110" r="1.0" fill="#00D4FF" class="p4"/>
+    <circle cx="280" cy="55"  r="1.2" fill="#00D4FF" class="p2"/>
+
+    <circle cx="655" cy="28"  r="1.8" fill="#00D4FF" class="p1"/>
+    <circle cx="710" cy="72"  r="1.2" fill="#00D4FF" class="p3"/>
+    <circle cx="760" cy="150" r="2.0" fill="#00D4FF" class="p2"/>
+    <circle cx="820" cy="38"  r="1.4" fill="#00D4FF" class="p1"/>
+    <circle cx="850" cy="125" r="1.0" fill="#00D4FF" class="p3"/>
+    <circle cx="865" cy="180" r="1.6" fill="#00D4FF" class="p2"/>
+    <circle cx="625" cy="165" r="1.0" fill="#00D4FF" class="p4"/>
+    <circle cx="595" cy="50"  r="1.2" fill="#00D4FF" class="p1"/>
+  </g>
+
+  <!-- Corner UI brackets (top-left) -->
+  <path d="M18,18 L60,18" stroke="#00D4FF" stroke-width="1.5" stroke-opacity="0.6"/>
+  <path d="M18,18 L18,60" stroke="#00D4FF" stroke-width="1.5" stroke-opacity="0.6"/>
+
+  <!-- Corner UI brackets (top-right) -->
+  <path d="M882,18 L840,18" stroke="#00D4FF" stroke-width="1.5" stroke-opacity="0.6"/>
+  <path d="M882,18 L882,60" stroke="#00D4FF" stroke-width="1.5" stroke-opacity="0.6"/>
+
+  <!-- Corner UI brackets (bottom-left) -->
+  <path d="M18,202 L60,202" stroke="#00D4FF" stroke-width="1.5" stroke-opacity="0.6"/>
+  <path d="M18,202 L18,160" stroke="#00D4FF" stroke-width="1.5" stroke-opacity="0.6"/>
+
+  <!-- Corner UI brackets (bottom-right) -->
+  <path d="M882,202 L840,202" stroke="#00D4FF" stroke-width="1.5" stroke-opacity="0.6"/>
+  <path d="M882,202 L882,160" stroke="#00D4FF" stroke-width="1.5" stroke-opacity="0.6"/>
+
+  <!-- Name -->
+  <text x="450" y="96" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="54" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="1.5">Anuj Wankhede</text>
+
+  <!-- Tagline -->
+  <text x="450" y="130" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="14" fill="#00D4FF" text-anchor="middle" letter-spacing="3" opacity="0.85">BUILDING AI THAT EARNS TRUST · NOT JUST ACCURACY</text>
+
+  <!-- Stat pills -->
+  <!-- 9.2 CGPA -->
+  <rect x="168" y="153" width="96" height="24" rx="12" fill="#00D4FF" fill-opacity="0.12"/>
+  <rect x="168" y="153" width="96" height="24" rx="12" fill="none" stroke="#00D4FF" stroke-width="0.6" stroke-opacity="0.5"/>
+  <text x="216" y="169" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#00D4FF" text-anchor="middle" letter-spacing="0.5">9.2 GPA</text>
+
+  <!-- Patent -->
+  <rect x="276" y="153" width="96" height="24" rx="12" fill="#F59E0B" fill-opacity="0.12"/>
+  <rect x="276" y="153" width="96" height="24" rx="12" fill="none" stroke="#F59E0B" stroke-width="0.6" stroke-opacity="0.5"/>
+  <text x="324" y="169" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#F59E0B" text-anchor="middle" letter-spacing="0.5">Patent Filed</text>
+
+  <!-- 2x Published -->
+  <rect x="384" y="153" width="112" height="24" rx="12" fill="#10B981" fill-opacity="0.12"/>
+  <rect x="384" y="153" width="112" height="24" rx="12" fill="none" stroke="#10B981" stroke-width="0.6" stroke-opacity="0.5"/>
+  <text x="440" y="169" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#10B981" text-anchor="middle" letter-spacing="0.5">2× Published</text>
+
+  <!-- MSEDCL -->
+  <rect x="508" y="153" width="120" height="24" rx="12" fill="#A78BFA" fill-opacity="0.12"/>
+  <rect x="508" y="153" width="120" height="24" rx="12" fill="none" stroke="#A78BFA" stroke-width="0.6" stroke-opacity="0.5"/>
+  <text x="568" y="169" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#A78BFA" text-anchor="middle" letter-spacing="0.5">MSEDCL Collab</text>
+
+  <!-- Bottom glow line -->
+  <rect x="0" y="214" width="900" height="2" fill="url(#gline)" class="gl"/>
+  <rect x="0" y="216" width="900" height="2" fill="url(#gline)" opacity="0.25"/>
+</svg>
