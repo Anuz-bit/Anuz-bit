@@ -1,42 +1,43 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 100" width="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 100" width="900">
   <defs>
-    <linearGradient id="bg2" x1="0%" y1="100%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#000000"/>
-      <stop offset="45%" stop-color="#020d1a"/>
-      <stop offset="100%" stop-color="#010409"/>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#010409"/>
+      <stop offset="50%" stop-color="#020d1a"/>
+      <stop offset="100%" stop-color="#000000"/>
     </linearGradient>
-    <linearGradient id="gline2" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="gline" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#000000" stop-opacity="0"/>
-      <stop offset="20%" stop-color="#00D4FF" stop-opacity="0.9"/>
-      <stop offset="80%" stop-color="#00D4FF" stop-opacity="0.9"/>
+      <stop offset="25%" stop-color="#00D4FF" stop-opacity="1"/>
+      <stop offset="75%" stop-color="#00D4FF" stop-opacity="1"/>
       <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
     </linearGradient>
-    <style>
-      @keyframes shimmer2{0%,100%{opacity:0.6}50%{opacity:1}}
-      @keyframes pulse5{0%,100%{opacity:0.2}50%{opacity:0.6}}
-      .gl2{animation:shimmer2 2.5s ease-in-out infinite}
-      .pf{animation:pulse5 4s ease-in-out infinite}
-    </style>
   </defs>
-  <rect width="900" height="100" fill="url(#bg2)"/>
+
+  <rect width="900" height="100" fill="url(#bg)"/>
 
   <!-- Top glow line -->
-  <rect x="0" y="2" width="900" height="2" fill="url(#gline2)" class="gl2"/>
-  <rect x="0" y="0" width="900" height="2" fill="url(#gline2)" opacity="0.25"/>
+  <rect x="0" y="0" width="900" height="3" fill="url(#gline)" opacity="0.95"/>
+  <rect x="0" y="2" width="900" height="1.5" fill="url(#gline)" opacity="0.3"/>
 
-  <!-- Corner brackets -->
-  <path d="M18,18 L60,18" stroke="#00D4FF" stroke-width="1.5" stroke-opacity="0.5"/>
-  <path d="M18,18 L18,55" stroke="#00D4FF" stroke-width="1.5" stroke-opacity="0.5"/>
-  <path d="M882,18 L840,18" stroke="#00D4FF" stroke-width="1.5" stroke-opacity="0.5"/>
-  <path d="M882,18 L882,55" stroke="#00D4FF" stroke-width="1.5" stroke-opacity="0.5"/>
+  <!-- corner brackets -->
+  <line x1="18" y1="18" x2="55" y2="18" stroke="#00D4FF" stroke-width="1.8" stroke-opacity="0.55"/>
+  <line x1="18" y1="18" x2="18" y2="55" stroke="#00D4FF" stroke-width="1.8" stroke-opacity="0.55"/>
+  <circle cx="18" cy="18" r="2.5" fill="#00D4FF" opacity="0.65"/>
+  <line x1="882" y1="18" x2="845" y2="18" stroke="#00D4FF" stroke-width="1.8" stroke-opacity="0.55"/>
+  <line x1="882" y1="18" x2="882" y2="55" stroke="#00D4FF" stroke-width="1.8" stroke-opacity="0.55"/>
+  <circle cx="882" cy="18" r="2.5" fill="#00D4FF" opacity="0.65"/>
 
-  <!-- Decorative dots -->
-  <circle cx="60"  cy="65" r="1.5" fill="#00D4FF" class="pf"/>
-  <circle cx="840" cy="65" r="1.5" fill="#00D4FF" class="pf"/>
-  <circle cx="150" cy="45" r="1.0" fill="#00D4FF" class="pf"/>
-  <circle cx="750" cy="45" r="1.0" fill="#00D4FF" class="pf"/>
+  <!-- dots -->
+  <circle cx="60"  cy="70" r="1.8" fill="#00D4FF" opacity="0.35"/>
+  <circle cx="840" cy="70" r="1.8" fill="#00D4FF" opacity="0.35"/>
+  <circle cx="150" cy="50" r="1.2" fill="#00D4FF" opacity="0.20"/>
+  <circle cx="750" cy="50" r="1.2" fill="#00D4FF" opacity="0.20"/>
+  <circle cx="280" cy="75" r="1.0" fill="#00D4FF" opacity="0.18"/>
+  <circle cx="620" cy="75" r="1.0" fill="#00D4FF" opacity="0.18"/>
 
-  <!-- Quote text -->
-  <text x="450" y="58" font-family="'Segoe UI',Arial,sans-serif" font-size="14" fill="#8B949E" text-anchor="middle" font-style="italic" letter-spacing="0.5">Built with code, curiosity, and the need to explain every prediction.</text>
-  <text x="450" y="80" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#00D4FF" text-anchor="middle" letter-spacing="2" opacity="0.6">ANUJ WANKHEDE · VIT PUNE · 2025</text>
+  <!-- Quote -->
+  <text x="450" y="54" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#8B949E" text-anchor="middle" font-style="italic">Built with code, curiosity, and the need to explain every prediction.</text>
+
+  <!-- Sub label -->
+  <text x="450" y="76" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#00D4FF" text-anchor="middle" letter-spacing="3" opacity="0.55">ANUJ WANKHEDE  ·  VIT PUNE  ·  2025</text>
 </svg>
