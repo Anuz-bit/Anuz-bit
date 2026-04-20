@@ -1,103 +1,93 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 220" width="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 220" width="900">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#000000"/>
-      <stop offset="45%" stop-color="#020d1a"/>
+      <stop offset="50%" stop-color="#020d1a"/>
       <stop offset="100%" stop-color="#010409"/>
     </linearGradient>
     <linearGradient id="gline" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#000000" stop-opacity="0"/>
-      <stop offset="20%" stop-color="#00D4FF" stop-opacity="0.9"/>
-      <stop offset="80%" stop-color="#00D4FF" stop-opacity="0.9"/>
+      <stop offset="25%" stop-color="#00D4FF" stop-opacity="1"/>
+      <stop offset="75%" stop-color="#00D4FF" stop-opacity="1"/>
       <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
     </linearGradient>
-    <radialGradient id="glow" cx="50%" cy="50%" r="40%">
-      <stop offset="0%" stop-color="#00D4FF" stop-opacity="0.08"/>
+    <radialGradient id="glow" cx="50%" cy="45%" r="38%">
+      <stop offset="0%" stop-color="#00D4FF" stop-opacity="0.09"/>
       <stop offset="100%" stop-color="#00D4FF" stop-opacity="0"/>
     </radialGradient>
-    <style>
-      @keyframes pulse { 0%,100%{opacity:0.25} 50%{opacity:0.7} }
-      @keyframes pulse2 { 0%,100%{opacity:0.15} 50%{opacity:0.5} }
-      @keyframes shimmer { 0%,100%{opacity:0.7} 50%{opacity:1} }
-      .p1{animation:pulse 4s ease-in-out infinite}
-      .p2{animation:pulse 4s ease-in-out 1.3s infinite}
-      .p3{animation:pulse 4s ease-in-out 2.6s infinite}
-      .p4{animation:pulse2 5s ease-in-out infinite}
-      .gl{animation:shimmer 2.5s ease-in-out infinite}
-    </style>
+    <linearGradient id="p1g" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#00D4FF" stop-opacity="0.22"/><stop offset="100%" stop-color="#00D4FF" stop-opacity="0.06"/></linearGradient>
+    <linearGradient id="p2g" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#F59E0B" stop-opacity="0.22"/><stop offset="100%" stop-color="#F59E0B" stop-opacity="0.06"/></linearGradient>
+    <linearGradient id="p3g" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#10B981" stop-opacity="0.22"/><stop offset="100%" stop-color="#10B981" stop-opacity="0.06"/></linearGradient>
+    <linearGradient id="p4g" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#A78BFA" stop-opacity="0.22"/><stop offset="100%" stop-color="#A78BFA" stop-opacity="0.06"/></linearGradient>
   </defs>
 
-  <!-- Background -->
   <rect width="900" height="220" fill="url(#bg)"/>
+  <ellipse cx="450" cy="105" rx="310" ry="88" fill="url(#glow)"/>
 
-  <!-- Radial glow behind name -->
-  <ellipse cx="450" cy="100" rx="320" ry="90" fill="url(#glow)"/>
+  <!-- dots left -->
+  <circle cx="52"  cy="36"  r="2.2" fill="#00D4FF" opacity="0.55"/>
+  <circle cx="92"  cy="64"  r="1.4" fill="#00D4FF" opacity="0.30"/>
+  <circle cx="38"  cy="98"  r="1.0" fill="#00D4FF" opacity="0.25"/>
+  <circle cx="118" cy="30"  r="1.6" fill="#00D4FF" opacity="0.40"/>
+  <circle cx="68"  cy="152" r="2.0" fill="#00D4FF" opacity="0.45"/>
+  <circle cx="140" cy="120" r="1.2" fill="#00D4FF" opacity="0.30"/>
+  <circle cx="185" cy="52"  r="1.8" fill="#00D4FF" opacity="0.35"/>
+  <circle cx="162" cy="175" r="1.4" fill="#00D4FF" opacity="0.25"/>
+  <circle cx="248" cy="28"  r="1.2" fill="#00D4FF" opacity="0.30"/>
+  <circle cx="30"  cy="170" r="1.6" fill="#00D4FF" opacity="0.35"/>
+  <!-- dots right -->
+  <circle cx="848" cy="36"  r="2.2" fill="#00D4FF" opacity="0.55"/>
+  <circle cx="808" cy="64"  r="1.4" fill="#00D4FF" opacity="0.30"/>
+  <circle cx="862" cy="98"  r="1.0" fill="#00D4FF" opacity="0.25"/>
+  <circle cx="782" cy="30"  r="1.6" fill="#00D4FF" opacity="0.40"/>
+  <circle cx="832" cy="152" r="2.0" fill="#00D4FF" opacity="0.45"/>
+  <circle cx="760" cy="120" r="1.2" fill="#00D4FF" opacity="0.30"/>
+  <circle cx="715" cy="52"  r="1.8" fill="#00D4FF" opacity="0.35"/>
+  <circle cx="738" cy="175" r="1.4" fill="#00D4FF" opacity="0.25"/>
+  <circle cx="652" cy="28"  r="1.2" fill="#00D4FF" opacity="0.30"/>
+  <circle cx="870" cy="170" r="1.6" fill="#00D4FF" opacity="0.35"/>
 
-  <!-- Decorative dot field -->
-  <g>
-    <circle cx="48"  cy="38"  r="1.8" fill="#00D4FF" class="p1"/>
-    <circle cx="110" cy="72"  r="1.2" fill="#00D4FF" class="p2"/>
-    <circle cx="75"  cy="155" r="2.0" fill="#00D4FF" class="p3"/>
-    <circle cx="195" cy="28"  r="1.4" fill="#00D4FF" class="p1"/>
-    <circle cx="160" cy="135" r="1.0" fill="#00D4FF" class="p2"/>
-    <circle cx="240" cy="175" r="1.6" fill="#00D4FF" class="p3"/>
-    <circle cx="35"  cy="110" r="1.0" fill="#00D4FF" class="p4"/>
-    <circle cx="280" cy="55"  r="1.2" fill="#00D4FF" class="p2"/>
-
-    <circle cx="655" cy="28"  r="1.8" fill="#00D4FF" class="p1"/>
-    <circle cx="710" cy="72"  r="1.2" fill="#00D4FF" class="p3"/>
-    <circle cx="760" cy="150" r="2.0" fill="#00D4FF" class="p2"/>
-    <circle cx="820" cy="38"  r="1.4" fill="#00D4FF" class="p1"/>
-    <circle cx="850" cy="125" r="1.0" fill="#00D4FF" class="p3"/>
-    <circle cx="865" cy="180" r="1.6" fill="#00D4FF" class="p2"/>
-    <circle cx="625" cy="165" r="1.0" fill="#00D4FF" class="p4"/>
-    <circle cx="595" cy="50"  r="1.2" fill="#00D4FF" class="p1"/>
-  </g>
-
-  <!-- Corner UI brackets (top-left) -->
-  <path d="M18,18 L60,18" stroke="#00D4FF" stroke-width="1.5" stroke-opacity="0.6"/>
-  <path d="M18,18 L18,60" stroke="#00D4FF" stroke-width="1.5" stroke-opacity="0.6"/>
-
-  <!-- Corner UI brackets (top-right) -->
-  <path d="M882,18 L840,18" stroke="#00D4FF" stroke-width="1.5" stroke-opacity="0.6"/>
-  <path d="M882,18 L882,60" stroke="#00D4FF" stroke-width="1.5" stroke-opacity="0.6"/>
-
-  <!-- Corner UI brackets (bottom-left) -->
-  <path d="M18,202 L60,202" stroke="#00D4FF" stroke-width="1.5" stroke-opacity="0.6"/>
-  <path d="M18,202 L18,160" stroke="#00D4FF" stroke-width="1.5" stroke-opacity="0.6"/>
-
-  <!-- Corner UI brackets (bottom-right) -->
-  <path d="M882,202 L840,202" stroke="#00D4FF" stroke-width="1.5" stroke-opacity="0.6"/>
-  <path d="M882,202 L882,160" stroke="#00D4FF" stroke-width="1.5" stroke-opacity="0.6"/>
+  <!-- corner brackets -->
+  <line x1="18" y1="18" x2="58" y2="18" stroke="#00D4FF" stroke-width="2" stroke-opacity="0.7"/>
+  <line x1="18" y1="18" x2="18" y2="58" stroke="#00D4FF" stroke-width="2" stroke-opacity="0.7"/>
+  <circle cx="18" cy="18" r="3" fill="#00D4FF" opacity="0.8"/>
+  <line x1="882" y1="18" x2="842" y2="18" stroke="#00D4FF" stroke-width="2" stroke-opacity="0.7"/>
+  <line x1="882" y1="18" x2="882" y2="58" stroke="#00D4FF" stroke-width="2" stroke-opacity="0.7"/>
+  <circle cx="882" cy="18" r="3" fill="#00D4FF" opacity="0.8"/>
+  <line x1="18" y1="202" x2="58" y2="202" stroke="#00D4FF" stroke-width="2" stroke-opacity="0.7"/>
+  <line x1="18" y1="202" x2="18" y2="162" stroke="#00D4FF" stroke-width="2" stroke-opacity="0.7"/>
+  <circle cx="18" cy="202" r="3" fill="#00D4FF" opacity="0.8"/>
+  <line x1="882" y1="202" x2="842" y2="202" stroke="#00D4FF" stroke-width="2" stroke-opacity="0.7"/>
+  <line x1="882" y1="202" x2="882" y2="162" stroke="#00D4FF" stroke-width="2" stroke-opacity="0.7"/>
+  <circle cx="882" cy="202" r="3" fill="#00D4FF" opacity="0.8"/>
 
   <!-- Name -->
-  <text x="450" y="96" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="54" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="1.5">Anuj Wankhede</text>
+  <text x="450" y="96" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="54" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">Anuj Wankhede</text>
 
   <!-- Tagline -->
-  <text x="450" y="130" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="14" fill="#00D4FF" text-anchor="middle" letter-spacing="3" opacity="0.85">BUILDING AI THAT EARNS TRUST · NOT JUST ACCURACY</text>
+  <text x="450" y="126" font-family="'Segoe UI',Arial,sans-serif" font-size="12.5" fill="#00D4FF" text-anchor="middle" letter-spacing="4" opacity="0.82">BUILDING AI THAT EARNS TRUST · NOT JUST ACCURACY</text>
 
-  <!-- Stat pills -->
-  <!-- 9.2 CGPA -->
-  <rect x="168" y="153" width="96" height="24" rx="12" fill="#00D4FF" fill-opacity="0.12"/>
-  <rect x="168" y="153" width="96" height="24" rx="12" fill="none" stroke="#00D4FF" stroke-width="0.6" stroke-opacity="0.5"/>
-  <text x="216" y="169" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#00D4FF" text-anchor="middle" letter-spacing="0.5">9.2 GPA</text>
+  <!-- Pill 1 — CGPA -->
+  <rect x="172" y="149" width="104" height="26" rx="13" fill="url(#p1g)"/>
+  <rect x="172" y="149" width="104" height="26" rx="13" fill="none" stroke="#00D4FF" stroke-width="0.8" stroke-opacity="0.6"/>
+  <text x="224" y="166" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#00D4FF" text-anchor="middle">9.2 / 10  GPA</text>
 
-  <!-- Patent -->
-  <rect x="276" y="153" width="96" height="24" rx="12" fill="#F59E0B" fill-opacity="0.12"/>
-  <rect x="276" y="153" width="96" height="24" rx="12" fill="none" stroke="#F59E0B" stroke-width="0.6" stroke-opacity="0.5"/>
-  <text x="324" y="169" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#F59E0B" text-anchor="middle" letter-spacing="0.5">Patent Filed</text>
+  <!-- Pill 2 — Patent -->
+  <rect x="287" y="149" width="100" height="26" rx="13" fill="url(#p2g)"/>
+  <rect x="287" y="149" width="100" height="26" rx="13" fill="none" stroke="#F59E0B" stroke-width="0.8" stroke-opacity="0.6"/>
+  <text x="337" y="166" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#F59E0B" text-anchor="middle">Patent Filed</text>
 
-  <!-- 2x Published -->
-  <rect x="384" y="153" width="112" height="24" rx="12" fill="#10B981" fill-opacity="0.12"/>
-  <rect x="384" y="153" width="112" height="24" rx="12" fill="none" stroke="#10B981" stroke-width="0.6" stroke-opacity="0.5"/>
-  <text x="440" y="169" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#10B981" text-anchor="middle" letter-spacing="0.5">2× Published</text>
+  <!-- Pill 3 — Papers -->
+  <rect x="398" y="149" width="106" height="26" rx="13" fill="url(#p3g)"/>
+  <rect x="398" y="149" width="106" height="26" rx="13" fill="none" stroke="#10B981" stroke-width="0.8" stroke-opacity="0.6"/>
+  <text x="451" y="166" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#10B981" text-anchor="middle">2× Published</text>
 
-  <!-- MSEDCL -->
-  <rect x="508" y="153" width="120" height="24" rx="12" fill="#A78BFA" fill-opacity="0.12"/>
-  <rect x="508" y="153" width="120" height="24" rx="12" fill="none" stroke="#A78BFA" stroke-width="0.6" stroke-opacity="0.5"/>
-  <text x="568" y="169" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#A78BFA" text-anchor="middle" letter-spacing="0.5">MSEDCL Collab</text>
+  <!-- Pill 4 — MSEDCL -->
+  <rect x="515" y="149" width="118" height="26" rx="13" fill="url(#p4g)"/>
+  <rect x="515" y="149" width="118" height="26" rx="13" fill="none" stroke="#A78BFA" stroke-width="0.8" stroke-opacity="0.6"/>
+  <text x="574" y="166" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#A78BFA" text-anchor="middle">MSEDCL · Govt.</text>
 
   <!-- Bottom glow line -->
-  <rect x="0" y="214" width="900" height="2" fill="url(#gline)" class="gl"/>
-  <rect x="0" y="216" width="900" height="2" fill="url(#gline)" opacity="0.25"/>
+  <rect x="0" y="215" width="900" height="3" fill="url(#gline)" opacity="0.95"/>
+  <rect x="0" y="217" width="900" height="1.5" fill="url(#gline)" opacity="0.3"/>
 </svg>
