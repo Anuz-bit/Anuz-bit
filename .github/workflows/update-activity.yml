@@ -1,0 +1,108 @@
+name: Update README — Currently Working On
+
+on:
+  schedule:
+    - cron: '0 */3 * * *'   # every 3 hours
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch latest push from all repos
+        id: act
+        env:
+          # Use a PAT (classic) with `repo` scope stored as secret GH_PAT
+          # This lets the API see pushes across ALL your public repos
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+          USERNAME: Anuz-bit
+        run: |
+          RESPONSE=$(curl -s \
+            -H "Authorization: token $GH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/users/$USERNAME/events?per_page=50")
+
+          python3 - "$RESPONSE" << 'PYEOF'
+          import json, sys, os
+          from datetime import datetime, timezone
+
+          events = json.loads(sys.argv[1])
+          repo_name = ""
+          commit_msg = ""
+          pushed_at  = ""
+
+          for e in events:
+              if e.get("type") != "PushEvent":
+                  continue
+              r = e["repo"]["name"].split("/")[-1]
+              # skip the profile repo itself
+              if r.lower() == os.environ["USERNAME"].lower():
+                  continue
+              repo_name  = r
+              commits    = e.get("payload", {}).get("commits", [])
+              commit_msg = commits[-1]["message"].split("\n")[0][:72] if commits else ""
+              dt         = datetime.fromisoformat(e["created_at"].replace("Z", "+00:00"))
+              pushed_at  = dt.strftime("%b %d, %Y · %H:%M UTC")
+              break
+
+          with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+              f.write(f"repo={repo_name}\n")
+              f.write(f"commit={commit_msg}\n")
+              f.write(f"date={pushed_at}\n")
+          PYEOF
+
+      - name: Patch README
+        env:
+          REPO:   ${{ steps.act.outputs.repo }}
+          COMMIT: ${{ steps.act.outputs.commit }}
+          DATE:   ${{ steps.act.outputs.date }}
+        run: |
+          python3 << 'PYEOF'
+          import os, re
+
+          repo   = os.environ["REPO"].strip()
+          commit = os.environ["COMMIT"].strip()
+          date   = os.environ["DATE"].strip()
+
+          if not repo:
+              print("No recent push found — skipping.")
+              exit(0)
+
+          block = (
+              f"<!-- ACTIVITY:START -->\n"
+              f"> 🔨 **Currently hacking on:** "
+              f"[`{repo}`](https://github.com/Anuz-bit/{repo})\n"
+              f"> 💬 Last commit: *\"{commit}\"*\n"
+              f"> 🕐 Pushed: {date}\n"
+              f"<!-- ACTIVITY:END -->"
+          )
+
+          with open("README.md", "r") as f:
+              content = f.read()
+
+          pattern = r"<!-- ACTIVITY:START -->.*?<!-- ACTIVITY:END -->"
+          if not re.search(pattern, content, re.DOTALL):
+              print("Markers missing from README — nothing patched.")
+              exit(0)
+
+          content = re.sub(pattern, block, content, flags=re.DOTALL)
+
+          with open("README.md", "w") as f:
+              f.write(content)
+
+          print(f"Patched: {repo} — {commit}")
+          PYEOF
+
+      - name: Commit if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --cached --quiet && echo "No change." && exit 0
+          git commit -m "chore(auto): currently working on → ${{ steps.act.outputs.repo }}"
+          git push
