@@ -41,8 +41,6 @@ My background spans explainable ML for credit risk (patent filed), IoT field sys
 > 🕐 Pushed: Jul 15, 2026 · 06:50 UTC
 <!-- ACTIVITY:END -->
 
-*Auto-updates every 3 hours · Reflects your latest push across all repos*
-
 ---
 
 ## Work
