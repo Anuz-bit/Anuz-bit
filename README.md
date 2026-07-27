@@ -36,9 +36,9 @@ My background spans explainable ML for credit risk (patent filed), IoT field sys
 ## 🔨 Currently Working On
 
 <!-- ACTIVITY:START -->
-> 🔨 **Currently hacking on:** [`AI-Models-Context-Window`](https://github.com/Anuz-bit/AI-Models-Context-Window)
+> 🔨 **Currently hacking on:** [`Combinatix`](https://github.com/Anuz-bit/Combinatix)
 > 💬 Last commit: *""*
-> 🕐 Pushed: Jul 15, 2026 · 06:50 UTC
+> 🕐 Pushed: Jul 27, 2026 · 12:08 UTC
 <!-- ACTIVITY:END -->
 
 ---
