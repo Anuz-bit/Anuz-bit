@@ -31,23 +31,40 @@ jobs:
           import json, sys, os
           from datetime import datetime, timezone
 
-          events = json.loads(sys.argv[1])
+          try:
+              events = json.loads(sys.argv[1])
+          except json.JSONDecodeError:
+              events = []
+          if isinstance(events, dict):
+              events = events.get("items", [])
+          if not isinstance(events, list):
+              events = []
           repo_name = ""
           commit_msg = ""
           pushed_at  = ""
 
           for e in events:
+              if not isinstance(e, dict):
+                  continue
               if e.get("type") != "PushEvent":
                   continue
-              r = e["repo"]["name"].split("/")[-1]
+              repo = e.get("repo", {})
+              repo_full_name = repo.get("name", "")
+              if not repo_full_name:
+                  continue
+              r = repo_full_name.split("/")[-1]
               # skip the profile repo itself
               if r.lower() == os.environ["USERNAME"].lower():
                   continue
               repo_name  = r
-              commits    = e.get("payload", {}).get("commits", [])
-              commit_msg = commits[-1]["message"].split("\n")[0][:72] if commits else ""
-              dt         = datetime.fromisoformat(e["created_at"].replace("Z", "+00:00"))
-              pushed_at  = dt.strftime("%b %d, %Y · %H:%M UTC")
+              commits = e.get("payload", {}).get("commits", [])
+              if commits and isinstance(commits[-1], dict):
+                  msg = commits[-1].get("message", "")
+                  commit_msg = msg.split("\n")[0][:72] if msg else ""
+              created_at = e.get("created_at")
+              if created_at:
+                  dt = datetime.fromisoformat(created_at.replace("Z", "+00:00"))
+                  pushed_at = dt.strftime("%b %d, %Y · %H:%M UTC")
               break
 
           with open(os.environ["GITHUB_OUTPUT"], "a") as f:
